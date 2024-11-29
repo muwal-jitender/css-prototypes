@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    document.addEventListener("copy", (event) => {
+      const selectedData = window.getSelection().toString();
+      event.clipboardData.setData("text/plain", "😆");
+      event.preventDefault();
+    })
+  </script>
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      background-color: yellow;
+    }
+
+
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .loader {
+      height: 100px;
+      width: 100px;
+
+      border-radius: 50%;
+      border: 8px solid #ddd;
+      border-top-color: #333;
+      animation: rotate 1s infinite;
+    }
+
+    @keyframes rotate {
+      100% {
+        rotate: 360deg;
+      }
+    }
+
+    .box {
+      height: 400px;
+      width: 400px;
+      background-color: #2f2f2f;
+      padding: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .in {
+      height: 100%;
+      width: 100%;
+      background-color: #111;
+      position: relative;
+      z-index: 99;
+
+    }
+
+    .box::after {
+      content: "";
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      height: 600px;
+      width: 200px;
+      background-color: #fff;
+      animation: move 1.5s infinite;
+    }
+
+    @keyframes move {
+      100% {
+        transform: translate(-50%, -50%) rotate(225deg);
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="loader"></div>
+    <div class="box">
+      <div class="in"></div>
+    </div>
+  </div>
+</body>
+
+</html>

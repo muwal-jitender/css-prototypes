@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Set ECMAScript target version
+    "module": "commonjs", // Specify module code generation
+    "sourceMap": true // Enable source maps
+  }
+}
