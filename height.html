@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    main {
+      background-color: lightskyblue;
+      padding: 1rem;
+      width: 400px;
+    }
+
+    main p {
+      margin: 1rem auto;
+      background-color: white;
+      padding: 1rem;
+    }
+
+    main p:nth-child(1) {
+      width: 600px;
+    }
+
+    main p:nth-child(2) {
+      max-width: 600px;
+    }
+
+    .parent {
+      width: 900px;
+      background-color: red;
+    }
+
+    .container {
+      background-color: yellow;
+      min-width: 300px;
+      max-width: 800px;
+    }
+
+    @media screen {}
+  </style>
+</head>
+
+<body>
+  <!-- <header>
+    <h1> Width vs Min-Width vs Max-Width</h1>
+  </header>
+  <main>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam magni nobis eligendi, dolor id rerum error illo placeat debitis, architecto dolores quasi? Voluptatibus optio minima dolore velit laborum dolor doloremque sequi quis maiores quibusdam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iste doloremque ab aperiam vel, dolor, eum doloribus quaerat amet ipsa reiciendis mollitia officiis autem.</p>
+  </main> -->
+
+  <!-- <div style="width: 100%;  margin-top: 20px;  background: lightgray;">
+    <div style="min-width: 100px; max-width: 500px; padding: 10px auto;background: rgb(23, 155, 199);">
+      Content
+    </div>
+  </div> -->
+  <div class="parent">
+    <div class="container">
+      Hi there
+    </div>
+  </div>
+</body>
+
+</html>
