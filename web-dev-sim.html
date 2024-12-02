@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Example</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 200px 250px;
+      grid-auto-rows: minmax(150px, auto);
+      grid-row-gap: 20px;
+      grid-column-gap: 10px;
+      justify-content: space-between;
+
+    }
+
+    .grid-item {
+      padding: 10px;
+    }
+
+    .grid-item-1 {
+      background-color: aqua;
+
+
+    }
+
+    .grid-item-2 {
+      background-color: rgb(122, 245, 245);
+    }
+
+    .grid-item-3 {
+      background-color: rgb(195, 235, 235);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="grid-item grid-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellendus veritatis illum. Illum eveniet unde ullam enim tenetur debitis dolor dolorum earum consectetur neque, laborum sint molestias iste eos vero ipsum voluptas! Fugiat doloribus libero voluptatem ullam, accusantium tempora perspiciatis repellendus.</div>
+    <div class="grid-item grid-item-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam officia ab, fugiat dolores animi deserunt esse. Quibusdam dignissimos, adipisci, cumque vero quaerat qui, debitis illo facilis quae accusantium laboriosam sunt?</div>
+    <div class="grid-item grid-item-3">Grid Item 3</div>
+    <div class="grid-item grid-item-4">Grid Item 4</div>
+    <div class="grid-item grid-item-5">Grid Item 5</div>
+  </div>
+</body>
+
+</html>
